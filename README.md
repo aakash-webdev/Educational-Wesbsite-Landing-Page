@@ -1,5 +1,5 @@
-# Educational-Wesbsite-Project
-<h1>This project is an Educational Home Page, created using HTML5 and raw CSS3. It is entirely hand-coded by myself.</h1>
+<h1>Educational Wesbsite Project</h1>
+<h2>This project is an Educational Home Page, created using HTML5 and raw CSS3. It is entirely hand-coded by myself.</h2>
 
 <b>Features:</b>
 <li> Well-Structured HTML: The HTML is formatted using HTML5 semantics, ensuring clear and organized code. CSS3 is used to implement elegant hover effects, enhancing the user experience with smooth and sophisticated interactions. </li>
