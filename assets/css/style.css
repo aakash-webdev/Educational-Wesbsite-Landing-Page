@@ -1,0 +1,1274 @@
+/* ------------------------------------------------- Common CSS starts ------------------------------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+:root {
+    --blue: #00306e;
+    --red: #d2093c;
+    --grey: #5b5f64;
+    --star-color: #ffa439;
+    --underline: #eaeaea;
+    --border: rgba(0, 48, 110, .1);
+    --font: "Source Sans 3", sans-serif;
+    --icon: "Font Awesome 5 Free";
+    --background-color: #f5f5f5;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 56px;
+    color: var(--blue);
+    font-weight: 700;
+}
+
+
+/* ------------------------------------------------- Common CSS ends ------------------------------------------------- */
+
+
+
+/* ------------ Header CSS starts here ------------ */
+
+/* Top Header CSS starts */
+
+.top_header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--blue);
+    padding: 5px 100px;
+}
+
+.top_header i {
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+}
+
+.top_header a {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.header_contact {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_contact a:hover,
+.header_social i:hover {
+    filter: brightness(70%);
+}
+
+.header_contact i,
+.header_social i {
+    margin: 0 5px 0 0;
+}
+
+.header_call,
+.header_mail {
+    display: flex;
+    align-items: center;
+}
+
+.header_mail {
+    margin-left: 20px;
+}
+
+/* Top Header CSS ends */
+
+
+/* Bottom Header CSS starts */
+
+.bottom_header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 100px;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown:hover .dd_options {
+    display: block;
+}
+
+.dd_options {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    background-color: white;
+}
+
+.dd_options a {
+    display: block;
+    padding: 5px 0 5px 35px;
+    transition: .4s;
+    color: var(--blue);
+}
+
+.dd_options a:hover {
+    color: var(--red);
+}
+
+.dd_menu,
+.without_dd {
+    color: var(--blue);
+    padding: 32px 30px;
+    transition: .4s;
+    font-weight: 500;
+}
+
+.dd_menu::after {
+    font-family: var(--icon);
+    content: "\f078";
+    padding-left: 5px;
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.dd_menu:hover,
+.without_dd:hover {
+    color: var(--red);
+}
+
+#dd_active,
+#dd_opt_active {
+    color: var(--red);
+}
+
+.header_menu,
+.header_search {
+    display: flex;
+    align-items: center;
+}
+
+.header_search input {
+    padding: 15px 30px;
+    border-style: none;
+    outline-style: none;
+    background-color: #f4f5f5;
+    border-radius: 5px;
+    font-family: var(--font);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.header_search {
+    position: relative;
+}
+
+.header_search a {
+    position: absolute;
+    right: 8px;
+}
+
+.header_search i {
+    font-size: 22px;
+    line-height: 28px;
+    color: #3270fc;
+}
+
+
+/* Bottom Header CSS ends */
+
+/* ------------ Header CSS ends here ------------ */
+
+
+
+/* ------------ Main CSS starts here ------------ */
+
+/* Hero CSS starts */
+
+.hero {
+    width: 100%;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+}
+
+.inner_hero {
+    padding: 150px 120px;
+}
+
+.hero_tag p {
+    display: inline-block;
+    color: white;
+    font-size: 26px;
+    line-height: 32px;
+    padding: 3px 15px;
+    background-color: var(--red);
+}
+
+.hero_title h1 {
+    font-size: 70px;
+    color: white;
+    font-weight: 700;
+    width: 700px;
+    line-height: 76px;
+    margin: 18px 0;
+    letter-spacing: -2px;
+}
+
+.hero_btn a {
+    color: white;
+    padding: 15px 35px;
+    border: 2px solid var(--grey);
+    border-radius: 5px;
+    transition: .4s;
+    margin-bottom: 34px;
+    font-weight: 500;
+}
+
+.hero_btn a:hover {
+    background-color: var(--red);
+    border: 2px solid var(--red);
+}
+
+/* Hero CSS ends */
+
+
+/* Services CSS starts */
+
+.service {
+    margin: 100px 0;
+    width: 100%;
+}
+
+.service_title {
+    text-align: center;
+    margin: 0 0 30px;
+}
+
+.featured_services {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 100px;
+}
+
+.academic_service {
+    width: 25%;
+    position: relative;
+}
+
+.academic_img img {
+    width: 100%;
+    transition: .3s;
+}
+
+.academic_box {
+    padding: 0 12px;
+}
+
+.academic_title a {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    bottom: 60px;
+    padding: 0 20px;
+    transition: .3s;
+}
+
+.academic_title a:hover {
+    filter: brightness(60%);
+}
+
+.academic_btn a {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    bottom: 40px;
+    padding: 0 20px;
+    transition: .3s;
+}
+
+.academic_box:hover .academic_btn a {
+    filter: brightness(60%);
+}
+
+.academic_box:hover .academic_img img {
+    filter: brightness(10%);
+}
+
+.academic_btn a::after {
+    font-family: var(--icon);
+    font-weight: 900;
+    content: '\f061';
+    margin-left: 10px;
+}
+
+/* Services CSS ends */
+
+
+/* Welcome CSS starts */
+
+.welcome {
+    margin: 10px 0 120px;
+    width: 100%;
+}
+
+.inner_welcome {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 100px;
+}
+
+.welcome_title span {
+    color: var(--red);
+}
+
+.welcome_img,
+.welcome_content {
+    width: 50%;
+}
+
+.welcome_content {
+    padding: 60px 0 0 60px;
+}
+
+.welcome_img {
+    position: relative;
+}
+
+.weldome_badge {
+    position: absolute;
+    top: 100px;
+    right: 80px;
+}
+
+.welcome_subtitle p {
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey);
+    width: 540px;
+}
+
+.welcome_subtitle_btn p {
+    color: var(--grey);
+    padding-bottom: 44px;
+}
+
+.welcome_subtitle_btn a {
+    font-weight: 600;
+    color: var(--red);
+    text-decoration: underline;
+}
+
+.welcome_subtitle,
+.welcome_title {
+    margin-bottom: 26px;
+}
+
+.welcome_heading {
+    border-bottom: 1px solid var(--underline);
+}
+
+.welcome_btn,
+.welcome_support_btn {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.welcome_info_detail p {
+    margin: 38px 0 26px;
+    color: var(--grey);
+    width: 540px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.welcome_read_btn a {
+    padding: 14px 35px;
+    border: 2px solid var(--border);
+    color: var(--blue);
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.welcome_read_btn i {
+    font-size: 16px;
+    line-height: 22px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.welcome_read_btn a:hover {
+    color: white;
+    border: 2px solid var(--red);
+    background-color: var(--red);
+}
+
+.welcome_support_btn_icon img {
+    font-size: 45px;
+    line-height: 51px;
+    margin: 0 10px 0 30px;
+}
+
+.welcome_support_btn_text p {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--grey);
+}
+
+.welcome_support_btn_text a {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--blue);
+    transition: .4s;
+}
+
+.welcome_support_btn_text a:hover {
+    color: var(--red);
+}
+
+/* Welcome CSS ends */
+
+
+/* Campus CSS starts */
+
+.campus {
+    background-image: url(../images/campus-bg.png);
+    padding: 100px 0 110px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.campus_title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.campus_content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 100px;
+    align-items: center;
+}
+
+.campus_left {
+    width: 60%;
+    padding: 0 12px;
+}
+
+.campus_right {
+    width: 40%;
+    padding: 0 12px;
+}
+
+.campus_advantage {
+    background-color: white;
+    padding: 50px 60px;
+}
+
+.campus_advantage li,
+.adv_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.adv_content {
+    padding: 30px 0;
+}
+
+.campus_advantage li {
+    align-items: center;
+}
+
+.adv_title h3 {
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--blue);
+    margin-bottom: 14px;
+}
+
+.adv_subtitle p {
+    font-size: 16px;
+    line-height: 22px;
+    width: 290px;
+    color: var(--grey);
+}
+
+.campus_advantage {
+    margin: 0 25px 0 0;
+}
+
+.adv_btn i {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--blue);
+    border: 1px solid var(--border);
+    padding: 10px 14px;
+    border-radius: 100%;
+    transition: .4s;
+}
+
+.adv_btn i:hover {
+    border: 1px solid var(--blue);
+    background-color: var(--blue);
+    color: white;
+}
+
+.circle_icon {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+}
+
+.campus_right {
+    position: relative;
+}
+
+#adv_border {
+    border-bottom: 1px solid var(--underline);
+}
+
+.adv_icon img {
+    margin-right: 10px;
+}
+
+.campus_btn {
+    text-align: center;
+    margin-top: 60px
+}
+
+.campus_btn a {
+    padding: 12px 35px;
+    color: var(--blue);
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    border: 3px solid var(--border);
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.campus_btn a:hover {
+    color: white;
+    background-color: var(--red);
+    border: 3px solid var(--red);
+}
+
+.campus_btn i {
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/* Campus CSS ends */
+
+
+/* Courses CSS starts */
+
+.courses {
+    width: 100%;
+    margin: 100px 0;
+}
+
+.inner_courses {
+    padding: 0 100px;
+}
+
+.courses_title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.featured_courses {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top_course {
+    width: 25%;
+    padding: 0 12px;
+}
+
+.course_box {
+    background-color: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+}
+
+.course_tag {
+    display: flex;
+}
+
+.course_count {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course_content {
+    padding: 25px 0 17px;
+}
+
+.course_title {
+    padding: 14px 0 30px;
+}
+
+.course_heading {
+    padding: 0 25px;
+    border-bottom: 1px solid var(--underline);
+}
+
+.course_tag p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.course_tag i {
+    font-size: 8px;
+    line-height: 14px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.course_type p {
+    color: var(--red);
+}
+
+.course_lesson p {
+    color: var(--blue);
+    margin-left: 25px;
+}
+
+.course_title a {
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--blue);
+    font-weight: 600;
+    transition: .4s;
+}
+
+.course_title a:hover {
+    color: var(--red);
+}
+
+.course_count {
+    padding: 15px 25px 0;
+}
+
+.course_student_count p {
+    color: var(--blue);
+    font-size: 16px;
+}
+
+.course_student_count i {
+    margin-right: 5px;
+}
+
+.course_price p {
+    color: var(--red);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.course_sect_btn {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.course_sect_btn a {
+    padding: 12px 35px;
+    border: 1px solid var(--border);
+    color: var(--blue);
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.course_sect_btn a:hover {
+    color: white;
+    background-color: var(--red);
+    border: 1px solid var(--red);
+}
+
+.course_sect_btn i {
+    font-size: 16px;
+    line-height: 22px;
+    margin-left: 5px;
+}
+
+/* Courses CSS ends */
+
+
+/* Counter CSS starts */
+
+.counter {
+    margin: 0 0 110px;
+}
+
+.inner_counter {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--red);
+    text-align: center;
+    justify-content: center;
+    margin: 0 100px;
+}
+
+.counter_title h3 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: white;
+}
+
+.count p {
+    font-size: 60px;
+    line-height: 66px;
+    font-weight: 700;
+    color: white;
+    margin: 8px 0 5px;
+}
+
+.counter_subtitle p {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 2px;
+}
+
+#count_border {
+    border-right: 1px solid hsla(0, 0%, 100%, .2);
+}
+
+.counter_box {
+    padding: 15px 50px;
+    margin: 50px 0;
+}
+
+/* Counter CSS ends */
+
+
+/* Events CSS starts */
+/* Events CSS ends */
+
+
+/* Testimonial CSS starts */
+
+.testimonial {
+    margin: 90px 0 120px;
+    width: 100%;
+}
+
+.inner_testimonial {
+    padding: 0 220px;
+}
+
+.test_title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.test_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 50px 60px;
+    position: relative;
+}
+
+.author_name h3 {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.author_testimonial p {
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey);
+    max-width: 630px;
+    margin-bottom: 26px;
+}
+
+.author_designation p {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--grey);
+    margin-bottom: 15px;
+}
+
+.author_content {
+    margin-right: 35px;
+}
+
+.testimonial_quote img {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.author_review {
+    display: flex;
+}
+
+.author_star_icon {
+    display: flex;
+}
+
+.author_star_icon i {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.author_star_icon p {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+.author_star_icon i {
+    color: var(--star-color);
+}
+
+/* Testimonial CSS ends */
+
+
+/* Blog CSS starts */
+/* Blog CSS ends */
+
+/* ------------ Main CSS ends here ------------ */
+
+
+
+/* ------------ Footer CSS starts here ------------ */
+
+footer {
+    background-color: #0f1216;
+}
+
+.inner_footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    justify-content: space-evenly;
+}
+
+.footer_company_info p {
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    margin: 25px 0;
+    width: 290px;
+}
+
+.footer_company_call,
+.footer_company_mail {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.footer_company_call i,
+.footer_company_mail i {
+    color: white;
+    margin-right: 8px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer_company_call a,
+.footer_company_mail a {
+    color: #b7b7b9;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.footer_company_call a:hover,
+.footer_company_mail a:hover {
+    color: var(--red);
+}
+
+.footer_title h3 {
+    color: white;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.inner_footer li {
+    list-style: none;
+}
+
+.inner_footer li a {
+    color: #b7b7b9;
+    font-weight: 600;
+    padding: 0 0 3px;
+    border-bottom: 1px solid transparent;
+    margin: 0 0 5px;
+    transition: .3s;
+}
+
+.inner_footer li a:hover {
+    color: var(--red);
+    border-bottom: 1px solid var(--red);
+}
+
+.footer_form_info p {
+    color: white;
+    font-weight: 400;
+    width: 250px;
+    margin-bottom: 26px;
+}
+
+#email_form {
+    padding: 15px 30px;
+    font-family: var(--font);
+    outline-style: none;
+    border-radius: 5px 0 0 5px;
+}
+
+#email_form:focus {
+    border: 2px solid var(--red);
+}
+
+.newsltr_form {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.newsltr_form button {
+    color: white;
+    padding: 15px 22px;
+    font-size: 16px;
+    line-height: 23px;
+    border-style: none;
+    background-color: #3270fc;
+    position: absolute;
+    cursor: pointer;
+    left: 200px;
+}
+
+.newsltr_form button i {
+    vertical-align: middle;
+}
+
+.newsltr_form button:hover {
+    filter: brightness(120%);
+}
+
+.copyright {
+    margin: 20px;
+    color: white;
+}
+
+.copyright a {
+    color: var(--underline);
+    margin-left: 5px;
+    transition: .3s;
+}
+
+.copyright a:hover {
+    color: var(--red);
+}
+
+/* ------------ Footer CSS ends here ------------ */
+
+
+@media only screen and (max-width: 575px) {
+
+
+    .top_header {
+        padding: 5px 5px;
+    }
+
+    .bottom_header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navbar li {
+        display: block;
+    }
+
+    .bottom_header {
+        margin: 20px 100px;
+    }
+
+    .dd_options {
+        box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+
+    }
+
+    .dd_options a {
+        padding: 0;
+    }
+
+    .dd_options {
+        position: relative;
+    }
+
+    .hero {
+        background-position-x: -604px;
+    }
+
+    .inner_hero {
+        padding: 140px 20px;
+    }
+
+    .hero_tag p {
+        font-size: 15px;
+        line-height: 21px;
+        padding: 3px 5px;
+    }
+
+    .hero_title h1 {
+        font-size: 40px;
+        width: 200px;
+        line-height: 46px;
+        margin: 57px 0;
+    }
+
+    .hero_btn a {
+        padding: 6px 14px;
+    }
+
+    .dd_menu,
+    .without_dd {
+        padding: 17px;
+    }
+
+    .header_search input {
+        padding: 7px 23px;
+    }
+
+    .header_search i {
+        font-size: 15px;
+    }
+
+    .featured_services {
+        margin: 0px 50px;
+        flex-direction: column;
+    }
+
+    .academic_service {
+        width: 100%;
+    }
+
+    .academic_box {
+        margin: 10px 0;
+    }
+
+    .academic_title a {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .academic_btn a {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .inner_welcome {
+        padding: 0 20px;
+    }
+
+    .welcome_img,
+    .welcome_content {
+        width: 100%;
+    }
+
+    .welcome_content {
+        padding: 30px 0 0;
+    }
+
+    .welcome_subtitle p {
+        width: auto;
+    }
+
+    .welcome_btn,
+    .welcome_support_btn {
+        flex-direction: column;
+    }
+
+    .welcome_info_detail p {
+        width: auto;
+    }
+
+    .welcome_support_btn_icon img {
+        margin: 20px 0;
+    }
+
+    .weldome_badge {
+        top: 157px;
+        right: 81px;
+        width: 23%;
+    }
+
+    .campus {
+        padding: 50px 0;
+    }
+
+    .campus_content {
+        margin: auto;
+        justify-content: center;
+    }
+
+    .campus_left {
+        width: auto;
+        padding: 0 20px 50px;
+    }
+
+    .campus_right {
+        width: auto;
+        padding: 0 50px;
+    }
+
+    .campus_advantage {
+        padding: 20px 20px;
+    }
+
+    .campus_advantage li,
+    .adv_content {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .campus_advantage li {
+        text-align: center;
+    }
+
+    .campus_advantage {
+        margin: auto;
+    }
+
+    #adv_border {
+        border-bottom: none;
+    }
+
+    .adv_icon img {
+        margin-bottom: 10px;
+    }
+
+    .circle_icon {
+        bottom: 49px;
+        right: 10px;
+        width: 80px;
+    }
+
+    .inner_courses {
+        padding: 0 20px;
+    }
+
+    .top_course {
+        width: auto;
+        padding: 20px 50px;
+    }
+
+    .course_sect_btn {
+        margin-top: 10px;
+    }
+
+    .courses {
+        margin: 80px 0;
+    }
+
+    .inner_counter {
+        margin: 0 20px;
+    }
+
+    #count_border {
+        border-right: none;
+        border-bottom: 1px solid hsla(0, 0%, 100%, .2);
+    }
+
+    .counter_box {
+        padding: 50px 50px;
+        margin: auto;
+    }
+
+    .inner_testimonial {
+        padding: 0;
+    }
+
+    .test_box {
+        margin: 0 20px;
+    }
+
+    .inner_footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer_company_info p {
+        width: auto;
+    }
+
+    .footer_company_call,
+    .footer_company_mail {
+        justify-content: center;
+    }
+
+    .footer_title h3 {
+        margin: 30px 0 5px;
+    }
+
+    .inner_footer li a {
+        margin: 0 0 3px;
+    }
+
+    .footer_form_info p {
+        width: auto;
+    }
+
+    #email_form {
+        padding: 10px 20px;
+        margin-right: 20px;
+    }
+
+    .newsltr_form {
+        justify-content: center;
+    }
+
+    .newsltr_form button {
+        padding: 10px 15px;
+        font-size: 15px;
+        left: 283px;
+    }
+
+}
