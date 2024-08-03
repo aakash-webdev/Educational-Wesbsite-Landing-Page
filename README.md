@@ -1,4 +1,4 @@
-<h1>Educational Wesbsite Project 💻</h1>
+<h1>Educational Wesbsite Landing Page 💻</h1>
 <h3>This project is an Educational Home Page, created using HTML5 and raw CSS3. It is entirely hand-coded by myself.</h3>
 
 <h3>Features:</h3>
