@@ -8,4 +8,4 @@
 <br>
 <p><b>👉 Responsive Design:</b><br>The website is responsive, utilizing the MediaQuery method to ensure it looks great on all devices.</p>
 <br>
-Click here for live demo: https://aakash-webdev.github.io/Educational-Wesbsite-Project/
+Click here for live demo: (https://aakash-webdev.github.io/Educational-Wesbsite-Landing-Page/)
